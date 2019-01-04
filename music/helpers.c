@@ -10,14 +10,12 @@
 // Converts a fraction formatted as X/Y to eighths
 int duration(string fraction)
 {
-    // TODO
     return (fraction[0] - '0') * 8 / (fraction[2] - '0');
 }
 
 // Calculates frequency (in Hz) of a note
 int frequency(string note)
 {
-    // TODO
     int semitones;
     if (note[0] == 'A')
     {
@@ -130,7 +128,6 @@ int frequency(string note)
 // Determines whether a string represents a rest
 bool is_rest(string s)
 {
-    // TODO
     if (s[0] == '\0')
     {
         return true;
