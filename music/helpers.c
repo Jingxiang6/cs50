@@ -27,7 +27,7 @@ int frequency(string note)
         {
             semitones = 0 + 12 * (note[2] - '0' - 4) - 1;
         }
-        else if (note[1] != '#' && note[1] != 'b')
+        else
         {
            semitones = 0 + 12 * (note[1] - '0' - 4);
         }
@@ -42,7 +42,7 @@ int frequency(string note)
         {
             semitones = 2 + 12 * (note[2] - '0' - 4) - 1;
         }
-        else if (note[1] != '#' && note[1] != 'b')
+        else
         {
            semitones = 2 + 12 * (note[1] - '0' - 4);
         }
@@ -57,7 +57,7 @@ int frequency(string note)
         {
             semitones = -9 + 12 * (note[2] - '0' - 4) - 1;
         }
-        else if (note[1] != '#' && note[1] != 'b')
+        else
         {
            semitones = -9 + 12 * (note[1] - '0' - 4);
         }
@@ -72,7 +72,7 @@ int frequency(string note)
         {
             semitones = -7 + 12 * (note[2] - '0' - 4) - 1;
         }
-        else if (note[1] != '#' && note[1] != 'b')
+        else
         {
            semitones = -7 + 12 * (note[1] - '0' - 4);
         }
@@ -87,7 +87,7 @@ int frequency(string note)
         {
             semitones = -5 + 12 * (note[2] - '0' - 4) - 1;
         }
-        else if (note[1] != '#' && note[1] != 'b')
+        else
         {
            semitones = -5 + 12 * (note[1] - '0' - 4);
         }
@@ -102,7 +102,7 @@ int frequency(string note)
         {
             semitones = -4 + 12 * (note[2] - '0' - 4) - 1;
         }
-        else if (note[1] != '#' && note[1] != 'b')
+        else
         {
            semitones = -4 + 12 * (note[1] - '0' - 4);
         }
@@ -117,7 +117,7 @@ int frequency(string note)
         {
             semitones = -2 + 12 * (note[2] - '0' - 4) - 1;
         }
-        else if (note[1] != '#' && note[1] != 'b')
+        else
         {
            semitones = -2 + 12 * (note[1] - '0' - 4);
         }
