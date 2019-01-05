@@ -23,7 +23,7 @@ int frequency(string note)
         {
             semitones = 0 + 12 * (note[2] - '0' - 4) + 1;
         }
-        if (note[1] == 'b')
+        else if (note[1] == 'b')
         {
             semitones = 0 + 12 * (note[2] - '0' - 4) - 1;
         }
@@ -38,7 +38,7 @@ int frequency(string note)
         {
             semitones = 2 + 12 * (note[2] - '0' - 4) + 1;
         }
-        if (note[1] == 'b')
+        else if (note[1] == 'b')
         {
             semitones = 2 + 12 * (note[2] - '0' - 4) - 1;
         }
@@ -53,7 +53,7 @@ int frequency(string note)
         {
             semitones = -9 + 12 * (note[2] - '0' - 4) + 1;
         }
-        if (note[1] == 'b')
+        else if (note[1] == 'b')
         {
             semitones = -9 + 12 * (note[2] - '0' - 4) - 1;
         }
@@ -68,7 +68,7 @@ int frequency(string note)
         {
             semitones = -7 + 12 * (note[2] - '0' - 4) + 1;
         }
-        if (note[1] == 'b')
+        else if (note[1] == 'b')
         {
             semitones = -7 + 12 * (note[2] - '0' - 4) - 1;
         }
@@ -83,7 +83,7 @@ int frequency(string note)
         {
             semitones = -5 + 12 * (note[2] - '0' - 4) + 1;
         }
-        if (note[1] == 'b')
+        else if (note[1] == 'b')
         {
             semitones = -5 + 12 * (note[2] - '0' - 4) - 1;
         }
@@ -98,7 +98,7 @@ int frequency(string note)
         {
             semitones = -4 + 12 * (note[2] - '0' - 4) + 1;
         }
-        if (note[1] == 'b')
+        else if (note[1] == 'b')
         {
             semitones = -4 + 12 * (note[2] - '0' - 4) - 1;
         }
@@ -113,7 +113,7 @@ int frequency(string note)
         {
             semitones = -2 + 12 * (note[2] - '0' - 4) + 1;
         }
-        if (note[1] == 'b')
+        else if (note[1] == 'b')
         {
             semitones = -2 + 12 * (note[2] - '0' - 4) - 1;
         }
@@ -128,12 +128,5 @@ int frequency(string note)
 // Determines whether a string represents a rest
 bool is_rest(string s)
 {
-    if (s[0] == '\0')
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+    return (s[0] == '\0');
 }
