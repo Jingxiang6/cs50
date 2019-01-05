@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+   <table class="table table-sm">
+    <thead>
+        <tr>
+            <th>{{"Symbol"}}</th>
+            <th>{{"Shares"}}</th>
+            <th>{{"Current Price/Share ($)"}}</th>
+            <th>{{"Total Value"}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for stock in symbol_shares %}
+            <tr>
+                <td>{{stock["symbol"]}}</td>
+                <td>{{stock["shares"]}}</td>
+                <td>{{"%0.2f"|format(stock["price"])}}</td>
+                <td>{{"%0.2f"|format(stock["total_value"])}}</td>
+            </tr>
+        {% endfor %}
+
+        <tr>
+            <th>{{"Cash"}}</th>
+            <th></th>
+            <th></th>
+            <th>{{"%0.2f"|format(cash)}}</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>--------------</td>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>{{"%0.2f"|format(total)}}</th>
+        </tr>
+    </tbody>
+</table>
+
+{% endblock %}
