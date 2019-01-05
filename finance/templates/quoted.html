@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <p>
+        Company name: {{name}}
+    </p>
+    <p>
+        Price($): {{"%0.2f"|format(price)}}
+    </p>
+    <p>
+        Symbol: {{symbol}}
+    </p>
+{% endblock %}
